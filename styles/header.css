@@ -58,7 +58,27 @@
   border-color: rgb(192, 192, 192);
   margin-left: px;
   margin-right: 10px;
+  position: relative;
 }
+.sbutton .tool {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.sbutton:hover .tool {
+  opacity: 1;
+}
+
 .sicon {
   height: 25px;
   margin-top: 4px;
@@ -70,6 +90,26 @@
   border-style: none;
   background-color: rgb(245, 245, 245);
 }
+.mbutton .tool {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  left: 930px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.mbutton:hover .tool {
+  opacity: 1;
+}
+
 .micon {
   height: 23px;
   margin-top: 4px;
